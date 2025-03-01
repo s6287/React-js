@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Instance from './Component/MessageContent';
+import Mohan from './Component/Mohan';
+
+import ThemeProvider from './Theme Switcher/ThemeProvider'; 
+import ThemeConsumer from './Theme Switcher/ThemeConsumer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Instance.Provider value="Suresh, take this pen!">  
+        <Mohan />
+      </Instance.Provider>
+
+      <ThemeProvider>
+        <ThemeConsumer />
+      </ThemeProvider>
+    </>
   );
 }
 
