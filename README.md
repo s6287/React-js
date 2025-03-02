@@ -1,4 +1,4 @@
-# 🌗 React Theme Switcher (useContext API)
+# 🌗 React Hook Practice :-  Theme Switcher (useContext API) Use Reducer (Counter App)
 
 This is a simple **Theme Switcher App** built with **React Context API (`useContext`)**.  
 It allows users to switch between **Light Mode** and **Dark Mode** dynamically.
